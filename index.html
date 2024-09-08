@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Yusuf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bookshelf Yusuf</h1>
+        <input type="text" id="searchInput" placeholder="Cari Judul...">
+    </header>
+    <center>
+    <img id="imgtambahbuku" src="img/bacabuku.jpg" alt="orangmembacabuku" width="200px">
+    </center>
+    <main>
+        <section class="add-book-section">
+            <h2>Tambah Buku</h2>
+            <form id="addBookForm">
+                <div class="input">
+                    <label for="title">Judul</label>
+                    <input type="text" id="title" placeholder="Judul Buku" required>
+                </div>
+                <div class="input">
+                    <label for="author">Penulis</label>
+                    <input type="text" id="author" placeholder="Penulis" required>
+                </div>
+                <div class="input">
+                    <label for="year">Tahun</label>
+                    <input type="number" id="year" placeholder="Tahun" required>
+                </div>
+                <div class="input_inline">
+                    <label for="isComplete">Sudah selesai dibaca?</label>
+                    <input type="checkbox" id="isComplete">
+                </div>
+                <button type="submit">Tambah</button>
+            </form>
+        </section>
+
+        <center><h1>Rak Buku 📚</h1></center>
+        
+
+        <section class="bookshelf-section">
+            <div id="uncompletedBookshelfList" class="book-list">
+                <h2>Belum Selesai Dibaca</h2>
+            </div>
+            <div id="completedBookshelfList" class="book-list">
+                <h2>Selesai Dibaca</h2>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <script src="script.js"></script>
+    
+    <footer>
+        <p>&copy; Copyright by Yusuf Rizqy Mubarok 2024</p>
+    </footer>
+</body>
+</html>
